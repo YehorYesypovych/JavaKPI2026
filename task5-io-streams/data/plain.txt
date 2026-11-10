@@ -1,0 +1,3 @@
+Java I/O Streams, lab work #5.
+FilterWriter encrypts, FilterReader decrypts.
+Key code is added to every character code.

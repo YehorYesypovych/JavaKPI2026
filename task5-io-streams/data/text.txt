@@ -1,0 +1,8 @@
+Java I/O Streams
+A stream is a sequence of data.
+Byte streams read and write raw bytes, while character streams work with text in a given encoding.
+BufferedReader reads text line by line.
+Object streams let a program save whole objects to a file and read them back later without extra code.
+It's a well-known, easy-to-use API.
+
+The end.
