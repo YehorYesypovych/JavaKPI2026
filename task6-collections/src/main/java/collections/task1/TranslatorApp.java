@@ -82,7 +82,7 @@ public class TranslatorApp {
 
         List<String> unknown = translator.findUnknownWords(phrase);
         if (!unknown.isEmpty()) {
-            ConsoleIO.println("Немає у словнику: " + String.join(", ", unknown));
+            ConsoleIO.println("Немає у словнику: " + String.join(",3 ", unknown));
         }
     }
 
@@ -92,7 +92,7 @@ public class TranslatorApp {
         StringBuilder row = new StringBuilder();
         int column = 0;
         for (Map.Entry<String, String> entry : translator.getSortedDictionary().entrySet()) {
-            row.append(String.format("%-30s", entry.getKey() + " — " + entry.getValue()));
+            row.append(String.format("%-30s", entry.getKey() + " - " + entry.getValue()));
             if (++column % 3 == 0) {
                 ConsoleIO.println(row.toString().stripTrailing());
                 row.setLength(0);
